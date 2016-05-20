@@ -1,0 +1,33 @@
+<ion-view view-title="Feed">
+  <ion-content>
+
+<!--
+  <div class="row" ng-repeat="post in feed" style="height: 80vh">
+  {{post.dogName}}
+  {post.ownerName}
+  {{post.picUrl}}
+  {{post.desc}}
+  </div>
+-->
+
+  <div class="card" ng-repeat="post in feed">
+  <div class="item item-divider">
+    <div class="row">
+    	<div class="col">
+    		<h3>{{post.dogName}}</h3>
+    	</div>
+    	<div class="col">
+    		<h3>{{post.ownerName}}</h3>
+    	</div>
+    </div>
+  </div>
+  <div class="item item-text-wrap" style="height: 40vh">
+    {{post.picUrl}}
+  </div>
+  <div class="item item-divider">
+    {{post.desc}}
+  </div>
+</div>
+
+  </ion-content>
+</ion-view>

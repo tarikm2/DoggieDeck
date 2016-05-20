@@ -1,0 +1,32 @@
+<ion-view view-title="Deck">
+  
+  <ion-content>
+
+
+    
+    <!-- the search bar for the doggie deck -->
+    <label class="item item-input">
+      <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="Search">
+    </label>
+
+    <div class="button-bar">
+      <a class="button">Name</a>
+      <a class="button">City</a>
+      <a class="button">Breed</a>
+      <a class="button">rating</a>
+      <a class="button">popoularity</a>
+    </div>
+
+
+    <div class="row" ng-repeat="chunk in dogGroups">
+        <div class="col" ng-repeat="dog in chunk">
+            {{dog.id}} {{dog.name}}
+        </div>
+    </div>
+
+
+  </ion-content>
+</ion-view>
+
+
